@@ -19,8 +19,10 @@ jobs:
 
       - name: Build shinylive site
         run: |
-          shinylive::export(appdir="app1", destdir="build")
-          shinylive::export(appdir="app2", destdir="build", subdir = "app2")
+          shinylive::export(appdir="processing_plants_points_map", destdir="build",subdir="processing_plants_points_map")
+          shinylive::export(appdir="species_by_county_map", destdir="build", subdir = "species_by_county_map")
+          shinylive::export(appdir="species_by_state_bargraph", destdir="build", subdir = "species_by_state_bargraph")
+          shinylive::export(appdir="state_by_species_hexagons", destdir="build", subdir = "state_by_species_hexagons")
         shell: "Rscript {0}"
 
       - name: Deploy 🚀
