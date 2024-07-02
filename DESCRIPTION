@@ -1,0 +1,19 @@
+Package: shiny_poc
+Type: Package
+Title: Shiny POC
+Version: 1.0
+Date: 2014-03-21
+Author: Ren Ryba
+Maintainer: Ren Ryba
+Imports:
+    ggplot2,
+    shiny,
+    shinylive,
+    ggplot2,
+    scales,
+    sf,
+    viridis,
+    terra,
+    plotly,
+    tidyterra
+RoxygenNote: 7.3.1
